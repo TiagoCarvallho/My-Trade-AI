@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <rect width="1080" height="1920" fill="#0d1117"/>
+  <!-- App Header -->
+  <rect x="0" y="0" width="1080" height="160" fill="#131722"/>
+  <text x="60" y="100" font-family="system-ui, sans-serif" font-weight="800" font-size="48" fill="#06b6d4">MY TRADE AI PRO</text>
+  <!-- Main Card -->
+  <rect x="40" y="200" width="1000" height="800" rx="32" fill="#131722" stroke="#1e2330" stroke-width="4"/>
+  <text x="80" y="280" font-family="system-ui, sans-serif" font-weight="700" font-size="36" fill="#f8fafc">Análise de Gráfico Quantitativo &amp; SMC</text>
+  <path d="M 100 700 L 300 500 L 500 600 L 700 350 L 900 250" stroke="#10b981" stroke-width="12" fill="none"/>
+  <!-- Status Badge -->
+  <rect x="80" y="320" width="300" height="60" rx="16" fill="#064e3b"/>
+  <text x="230" y="360" font-family="system-ui, sans-serif" font-weight="700" font-size="24" fill="#34d399" text-anchor="middle">Sinal: COMPRA (BULLISH)</text>
+  <!-- Secondary Card -->
+  <rect x="40" y="1040" width="1000" height="600" rx="32" fill="#131722" stroke="#1e2330" stroke-width="4"/>
+  <text x="80" y="1120" font-family="system-ui, sans-serif" font-weight="700" font-size="32" fill="#38bdf8">Níveis Chave de Liquidez</text>
+  <text x="80" y="1200" font-family="system-ui, sans-serif" font-size="28" fill="#94a3b8">Stop Loss: 1.08200 | Take Profit: 1.09450</text>
+  <text x="80" y="1260" font-family="system-ui, sans-serif" font-size="28" fill="#94a3b8">Relação Risco:Retorno: 1:3.2</text>
+</svg>

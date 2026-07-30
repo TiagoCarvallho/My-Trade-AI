@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#0d1117"/>
+  <rect x="0" y="0" width="1920" height="100" fill="#131722"/>
+  <text x="60" y="60" font-family="system-ui, sans-serif" font-weight="800" font-size="36" fill="#06b6d4">MY TRADE AI PRO - PAINEL QUANTITATIVO</text>
+  <rect x="60" y="140" width="1200" height="880" rx="24" fill="#131722" stroke="#1e2330" stroke-width="4"/>
+  <path d="M 100 800 L 300 650 L 500 720 L 800 400 L 1150 250" stroke="#22d3ee" stroke-width="10" fill="none"/>
+  <rect x="1300" y="140" width="560" height="880" rx="24" fill="#131722" stroke="#1e2330" stroke-width="4"/>
+  <text x="1340" y="220" font-family="system-ui, sans-serif" font-weight="700" font-size="28" fill="#f8fafc">Análise SMC &amp; Order Blocks</text>
+  <text x="1340" y="280" font-family="system-ui, sans-serif" font-size="22" fill="#34d399">✓ Quebra de Estrutura (BOS) Confirmada</text>
+  <text x="1340" y="330" font-family="system-ui, sans-serif" font-size="22" fill="#38bdf8">✓ Fair Value Gap (FVG) Preenchido</text>
+</svg>

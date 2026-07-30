@@ -1,0 +1,64 @@
+{
+  "id": "/",
+  "name": "My Trade AI - Pro",
+  "short_name": "MyTradeAI",
+  "description": "Análise técnica e quantitativa de gráficos financeiros com Smart Money Concepts e Inteligência Artificial.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay"],
+  "orientation": "portrait",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "categories": ["finance", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.svg",
+      "type": "image/svg+xml",
+      "sizes": "1080x1920",
+      "form_factor": "narrow",
+      "label": "Análise de Gráfico e Sinais SMC"
+    },
+    {
+      "src": "/screenshot-desktop.svg",
+      "type": "image/svg+xml",
+      "sizes": "1920x1080",
+      "form_factor": "wide",
+      "label": "Painel de Análise Quantitativa"
+    }
+  ]
+}

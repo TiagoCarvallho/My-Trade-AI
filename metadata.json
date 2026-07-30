@@ -1,0 +1,6 @@
+{
+  "name": "My Trade AI - Pro",
+  "description": "Análise técnica e quantitativa sênior de gráficos com Smart Money Concepts (SMC) e Price Action via Gemini AI.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
