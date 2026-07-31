@@ -3,11 +3,11 @@
   "description": "Análise técnica e quantitativa de gráficos financeiros com Smart Money Concepts e Inteligência Artificial.",
   "dir": "ltr",
   "display": "standalone",
-  "name": "My Trade AI",
+  "name": "My Trade AI ",
   "orientation": "any",
   "scope": "/",
   "short_name": "My Trade AI",
-  "start_url": "/",
+  "start_url": "/?v=3",
   "theme_color": "#0d1117",
   "icons": [
     {
