@@ -15,7 +15,7 @@
   "categories": ["finance", "business", "utilities"],
   "icons": [
     {
-  "src": "/logo.jpeg",
+  "src": "/logo.jpeg?v=2"
   "type": "image/jpeg",
   "sizes": "512x512",
   "purpose": "any maskable"
