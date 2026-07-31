@@ -1,9 +1,10 @@
-// Service Worker for My Trade AI - Pro PWA
-const CACHE_NAME = 'mytradeai-v2';
+// Service Worker para My Trade AI - Pro PWA
+const CACHE_NAME = 'mytradeai-v3';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/logo-novo.jpeg',
   '/icon-192.png',
   '/icon-512.png',
   '/icon-maskable.png',
