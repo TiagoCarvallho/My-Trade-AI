@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "My Trade AI - Pro",
-  "short_name": "MyTradeAI",
+  "name": "My Trade AI",
+  "short_name": "My Trade AI",
   "description": "Análise técnica e quantitativa de gráficos financeiros com Smart Money Concepts e Inteligência Artificial.",
   "lang": "pt-BR",
   "dir": "ltr",
@@ -15,11 +15,11 @@
   "categories": ["finance", "business", "utilities"],
   "icons": [
     {
-      "src": "/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
+  "src": "/logo.jpeg",
+  "type": "image/jpeg",
+  "sizes": "512x512",
+  "purpose": "any maskable"
+}
     {
       "src": "/icon-512.png",
       "type": "image/png",
