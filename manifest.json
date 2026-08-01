@@ -1,23 +1,21 @@
 {
-  "background_color": "#0d1117",
-  "description": "Análise técnica e quantitativa de gráficos financeiros com Smart Money Concepts e Inteligência Artificial.",
-  "dir": "ltr",
-  "display": "standalone",
   "name": "My Trade AI Pro",
   "short_name": "My Trade AI",
-  "start_url": "/?v=9",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
   "theme_color": "#0d1117",
   "icons": [
     {
       "src": "/logo-novo.jpeg",
+      "sizes": "192x192",
       "type": "image/jpeg",
-      "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
       "src": "/logo-novo.jpeg",
+      "sizes": "512x512",
       "type": "image/jpeg",
-      "sizes": "192x192",
       "purpose": "any maskable"
     }
   ]
