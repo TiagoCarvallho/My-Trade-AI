@@ -10,30 +10,15 @@
   "start_url": "/?v=3",
   "theme_color": "#0d1117",
   "icons": [
+        {
+      "src": "/logo-novo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    },
     {
       "src": "/logo-novo.jpeg",
       "type": "image/jpeg",
-      "sizes": "1024x1024",
-      "isSquare": true,
-      "isPng": false,
-      "isWebp": false,
-      "isJpg": true,
-      "width": 1024,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": false
-    },
-    {
-      "src": "https://my-trade-ai.onrender.com/favicon.ico",
-      "type": "image/x-icon",
-      "isSquare": false,
-      "isPng": false,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 0,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": false
+      "sizes": "192x192"
     }
   ]
 }
