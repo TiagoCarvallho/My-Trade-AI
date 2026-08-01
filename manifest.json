@@ -5,17 +5,17 @@
   "display": "standalone",
   "name": "My Trade AI Pro",
   "short_name": "My Trade AI",
-  "start_url": "/?v=7",
+  "start_url": "/?v=8",
   "theme_color": "#0d1117",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/logo-novo.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.png",
+      "src": "/logo-novo.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
