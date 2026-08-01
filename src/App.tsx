@@ -18,7 +18,10 @@ export default function App() {
   const [showCameraModal, setShowCameraModal] = useState<boolean>(false);
   const [currentAnalysis, setCurrentAnalysis] = useState<TradeAnalysis | null>(null);
   const [showResultModal, setShowResultModal] = useState<boolean>(false);
-  const [userName, setUserName] = useState<string>('Trader');
+  const [userName, setUserName] = useState<string>(() => {
+  return localStorage.getItem('mytrade_username') || localStorage.getItem('userName') || 'Trader';
+});
+
   const [chatInitialQuery, setChatInitialQuery] = useState<string | null>(null);
   const [hasSeenHistory, setHasSeenHistory] = useState<boolean>(() => {
     return localStorage.getItem('has_seen_history') === 'true';
