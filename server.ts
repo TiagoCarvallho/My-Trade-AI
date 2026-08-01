@@ -21,6 +21,13 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json({ limit: '20mb' }));
+app.use(express.static(path.join(__dirname, 'public'), {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('manifest.json')) {
+      res.setHeader('Content-Type', 'application/manifest+json');
+    }
+  }
+}));
 
 // Helper to initialize Gemini client strictly using the Profile API Key
 function getGeminiAI(customApiKey?: string) {
