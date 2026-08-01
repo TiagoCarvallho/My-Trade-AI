@@ -236,10 +236,16 @@ const stats = {
         )}
 
         {activeTab === 'perfil' && (
-          <ProfileView userName={userName} setUserName={setUserName} stats={stats} />
-        )}
-      </main>
-
+  <ProfileView
+    userName={userName}
+    setUserName={(newName) => {
+      setUserName(newName);
+      localStorage.setItem('userName', newName);
+      localStorage.setItem('mytrade_username', newName);
+    }}
+    stats={stats}
+  />
+)}
       {/* Camera Capture Modal */}
       <CameraModal
         isOpen={showCameraModal}
