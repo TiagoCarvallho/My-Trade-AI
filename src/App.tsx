@@ -18,7 +18,7 @@ export default function App() {
   const [showCameraModal, setShowCameraModal] = useState<boolean>(false);
   const [currentAnalysis, setCurrentAnalysis] = useState<TradeAnalysis | null>(null);
   const [showResultModal, setShowResultModal] = useState<boolean>(false);
-  const [userName, setUserName] = useState<string>('Tiago');
+  const [userName, setUserName] = useState<string>('Trader');
   const [chatInitialQuery, setChatInitialQuery] = useState<string | null>(null);
   const [hasSeenHistory, setHasSeenHistory] = useState<boolean>(() => {
     return localStorage.getItem('has_seen_history') === 'true';
@@ -33,68 +33,43 @@ export default function App() {
   }, [activeTab]);
 
   // Initial history matching the "1 HOJE, 1 SEMANA, 1 TOTAL" from the reference image screenshot
-  const INITIAL_HISTORY: TradeAnalysis[] = [
-    {
-      id: 'init-1',
-      timestamp: '2026-07-27 18:42',
-      direcao: 'Long (Compra)',
-      entrada: '64.250 / R$ 123.800',
-      stopLoss: '63.780 (Fundo da Varredura)',
-      tp1: '65.100 (Topo Local)',
-      tp2: '66.200 (FVG Diário)',
-      confianca: 84,
-      detectedAsset: 'WINQ26',
-      detectedTimeframe: '5Min',
-      headerInfo: 'Ativo: WINQ26 | 5Min',
-      marketSnapshot:
-        'Ativo: WINQ26 | 5Min\n\nVarredura de liquidez de fundo (Sell-side Liquidity Sweep) com rejeição forte em V-shape no tempo gráfico de 5Min. Presença de Bullish Order Block e Fair Value Gap não mitigado.',
-      smcAnalysis: {
-        liquiditySweep: 'Sell-side Sweep abaixo do mínimo anterior',
-        orderBlock: 'Bullish OB em zona de desconto',
-        fairValueGap: 'FVG de 5m com volume comprador',
-        structureShift: 'CHoCH + BOS confirmados',
-        riskReward: '1:3.8',
-      },
-      assetName: 'WINQ26',
-      timeframe: '5Min',
-    },
-  ];
+  const INITIAL_HISTORY: TradeAnalysis[] = [];
 
-  const [history, setHistory] = useState<TradeAnalysis[]>(() => {
-    const saved = localStorage.getItem('mytrade_history');
-    if (saved !== null) {
-      try {
-        return JSON.parse(saved);
-      } catch (e) {
-        console.error('Error loading saved history:', e);
-      }
+const [history, setHistory] = useState<TradeAnalysis[]>(() => {
+  const saved = localStorage.getItem('mytrade_history');
+  if (saved !== null) {
+    try {
+      return JSON.parse(saved);
+    } catch (e) {
+      console.error('Error loading saved history:', e);
     }
-    return INITIAL_HISTORY;
-  });
+  }
+  return INITIAL_HISTORY;
+});
 
-  const saveHistory = (newHistory: TradeAnalysis[]) => {
-    setHistory(newHistory);
-    localStorage.setItem('mytrade_history', JSON.stringify(newHistory));
-  };
+const saveHistory = (newHistory: TradeAnalysis[]) => {
+  setHistory(newHistory);
+  localStorage.setItem('mytrade_history', JSON.stringify(newHistory));
+};
 
-  const handleDeleteHistoryItem = (id: string) => {
-    const updated = history.filter((item) => item.id !== id);
-    saveHistory(updated);
-    if (currentAnalysis?.id === id) {
-      setCurrentAnalysis(null);
-    }
-  };
-
-  const handleClearHistory = () => {
-    saveHistory([]);
+const handleDeleteHistoryItem = (id: string) => {
+  const updated = history.filter((item) => item.id !== id);
+  setHistory(updated);
+  if (currentAnalysis?.id === id) {
     setCurrentAnalysis(null);
-  };
+  }
+};
 
-  const stats = {
-    today: history.length,
-    week: history.length,
-    total: history.length,
-  };
+const handleClearHistory = () => {
+  setHistory([]);
+  setCurrentAnalysis(null);
+};
+
+const stats = {
+  today: history.length,
+  week: history.length,
+  total: history.length,
+};
 
   const handleAnalyze = async (
     imageData: string,
