@@ -77,19 +77,20 @@ DIRETRIZES DE ANÁLISE:
 1. SE A IMAGEM FOR UM GRÁFICO FINANCEIRO:
 - Realize a análise técnica de SMC/Price Action normalmente.
 - Identifique Ticker, Tempo Gráfico, Ponto de Entrada, Stop Loss, TP1, TP2 e Direção (Long/Short).
+- Em 'headerInfo', coloque "Ativo: [TICKER] | [TEMPO_GRÁFICO]".
 
 2. SE A IMAGEM NÃO FOR UM GRÁFICO FINANCEIRO (ex: foto de uma flor, animal, carro, pessoa, objeto):
-- Em 'detectedAsset', coloque o nome do elemento identificado na foto (ex: "Imagem: Flor").
+- Em 'detectedAsset', coloque o nome do elemento identificado na foto (ex: "Imagem: Ambulância de Brinquedo (Lego)").
+- Em 'headerInfo', coloque APENAS "Ativo: [Elemento Identificado]" (NÃO inclua "| N/A", nem tempo gráfico).
 - Em 'detectedTimeframe', 'entrada', 'stopLoss', 'tp1', 'tp2' e 'direcao', preencha com "N/A".
-- Em 'headerInfo', coloque "Ativo: [Elemento Identificado] | N/A".
-- Em 'marketSnapshot', descreva detalhadamente o que você está vendo na imagem (ex: "A imagem enviada exibe uma flor amarela em um jardim com fundo desfocado...").
+- Em 'marketSnapshot', descreva detalhadamente o que você está vendo na imagem.
 
 Responda ESTRITAMENTE em formato JSON com a seguinte estrutura:
 
 {
   "detectedAsset": "Ticker do ativo (ex: WINQ26) ou Identificação da foto (ex: Imagem: Flor)",
   "detectedTimeframe": "Tempo gráfico (ex: 5Min) ou N/A",
-  "headerInfo": "Ativo: [TICKER/OBJETO] | [TEMPO/NA]",
+  "headerInfo": "Ativo: WINQ26 | 5Min (para gráficos) ou Ativo: Imagem: Flor (para fotos gerais)",
   "direcao": "Long (Compra), Short (Venda) ou N/A",
   "entrada": "Preço de entrada ou N/A",
   "stopLoss": "Preço de Stop Loss ou N/A",
