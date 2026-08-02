@@ -57,14 +57,14 @@ const saveHistory = (newHistory: TradeAnalysis[]) => {
 
 const handleDeleteHistoryItem = (id: string) => {
   const updated = history.filter((item) => item.id !== id);
-  setHistory(updated);
+  saveHistory(updated);
   if (currentAnalysis?.id === id) {
     setCurrentAnalysis(null);
   }
 };
 
 const handleClearHistory = () => {
-  setHistory([]);
+  saveHistory([]);
   setCurrentAnalysis(null);
 };
 
