@@ -38,8 +38,8 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
       return () => clearTimeout(timer);
     }
   }, [selectedImage]);
-
-  const compressImageForAI = (dataUrl: string, maxDim = 1280, quality = 0.82): Promise<string> => {
+  
+const compressImageForAI = (dataUrl: string, maxDim = 800, quality = 0.70): Promise<string> => {
     return new Promise((resolve) => {
       const img = new Image();
       img.onload = () => {
